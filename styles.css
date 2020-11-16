@@ -1,74 +1,76 @@
-body {
-    min-height: 75rem; /* Can be removed; just added for demo purposes */
-  }
-  
-  .navbar {
+.navbar {
     margin-bottom: 0;
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #040404;
-  }
-  .navbar span{
+}
+
+.navbar span {
     font-size: 2em;
     font-weight: bold;
     margin-right: 3%;
-  }
+}
 
-  .logo {
+.logo {
     width: 40%;
-  }
-  
-  .jumbotron {
+}
+
+.jumbotron {
     padding-bottom: 7rem;
     margin-bottom: 0;
     background-color: #fff;
-  }
-  
-  .jumbotron p:last-child {
+}
+
+.jumbotron p:last-child {
     margin-bottom: 0;
-  }
-  
-  .jumbotron-heading {
+}
+
+.jumbotron-heading {
     font-weight: 300;
-  }
-  
-  .jumbotron .container {
+}
+
+.jumbotron .container {
     max-width: 40rem;
-  }
-  
-  .album {
-    min-height: 50rem; /* Can be removed; just added for demo purposes */
+}
+
+.album {
+    min-height: 50rem;
+    /* Can be removed; just added for demo purposes */
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #f7f7f7;
-  }
-  
-  .card {
+}
+
+.card {
     float: left;
     width: 33.333%;
     padding: .75rem;
     margin-bottom: 2rem;
     border: 0;
-  }
-  
-  .card > img {
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.card > img {
     margin-bottom: 1rem;
     width: 100%;
-  }
+}
 
 .card-header {
-  height: 20%;
+    height: 20%;
 }
-  
-  .card-text {
+
+.card-text {
     font-size: 85%;
-  }
-  
-  footer {
+}
+
+footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin-bottom: .25rem;
-  }
+}
