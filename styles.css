@@ -64,8 +64,8 @@
 }
 
 .card-img-top {
-    max-width: 20rem;
-    max-height: 20rem;
+    max-width: min(20rem,400px);
+    max-height: min(20rem,400px);
 }
 
 .card-header {
@@ -76,9 +76,9 @@
     font-size: 85%;
 }
 
-footer {
+footer {/*
     position: fixed;
-    bottom: 0;
+    bottom: 0;*/
     padding-top: 3rem;
     padding-bottom: 3rem;
     background: #170C66;
@@ -86,7 +86,7 @@ footer {
 }
 
 footer p {
-    margin-bottom: .25rem;
+    /*margin-bottom: .25rem;*/
 }
 
 .card p {
@@ -127,7 +127,4 @@ tr {
     display: block;
 }
 
-body {
-    margin-bottom: 20%;
-}
 
