@@ -45,9 +45,8 @@
 
 .card {
     float: left;
-    width: 33.333%;
-    padding: .75rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    /*padding: .75rem;*/
     border: 0;
 }
 
@@ -72,8 +71,12 @@
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background: #170C66;
+    width: 100%;
 }
 
 footer p {
@@ -92,4 +95,32 @@ td {
 
 tr {
   height: 30%;
+}
+
+#principiantesCollapseButton, #avanzadosCollapseButton {
+    font-size: 3rem;
+    color: #170C66;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#principiantesCollapseButton:hover, #avanzadosCollapseButton:hover {
+    color: #00ACE4;
+    text-decoration: none;
+}
+
+#quote {
+    background-color: #170C66;
+    margin: 3rem 0;
+    display: block;
+    height: 50vh;
+}
+
+#accordionNiveles {
+    display: block;
+}
+
+body {
+    margin-bottom: 20%;
 }
