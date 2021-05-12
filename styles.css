@@ -48,6 +48,7 @@
     width: 100%;
     /*padding: .75rem;*/
     border: 0;
+    text-align: center;
 }
 
 .white-bg {
@@ -60,6 +61,11 @@
     display: block; 
     margin-left: auto; 
     margin-right: auto;
+}
+
+.card-img-top {
+    max-width: 20rem;
+    max-height: 20rem;
 }
 
 .card-header {
