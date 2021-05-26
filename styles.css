@@ -238,7 +238,7 @@ tr {
   section.cta {
     position: relative;
     padding: 15rem 0;
-    background-image: url("pumm.png");
+    background-image: url("./libraries/assets/landing/pumm.png");
     background-position: center;
     background-size: cover;
   }
@@ -340,7 +340,7 @@ section {
 
   .call-to-action {
     background-color: #343a40;
-    background: url("background.png") no-repeat center center;
+    background: url("./libraries/assets/landing/background.png") no-repeat center center;
     background-size: cover;
     padding-top: 7rem;
     padding-bottom: 7rem;
