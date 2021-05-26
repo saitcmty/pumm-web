@@ -257,7 +257,7 @@ tr {
   }
 
   .bg-gradient-primary-to-secondary {
-    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    background: linear-gradient(45deg, #170C66, #00ACE4) !important;
   }
 
   aside,
@@ -331,4 +331,145 @@ section {
   .btn-clases {
     color: #FFDE59;
     border-color: #FFDE59;
+  }
+  .btn-clases::hover  {
+    background-color: #FFDE59 !important; 
+    color: white !important;
+  }
+
+
+  .call-to-action {
+    background-color: #343a40;
+    background: url("background.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .call-to-action:before {
+    content: "";
+    background-color: #00ACE4;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    margin-top: 7rem;
+  }
+  
+
+  .icon-feature {
+    font-size: 4rem;
+  }
+  
+  .features-device-mockup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .features-device-mockup .circle {
+    position: absolute;
+    left: 0;
+    fill: url(#circleGradient);
+    width: 70%;
+    display: none;
+  }
+  .features-device-mockup .circle .gradient-start-color {
+    stop-color: #170C66;
+  }
+  .features-device-mockup .circle .gradient-end-color {
+    stop-color: #00ACE4;
+  }
+  .features-device-mockup .shape-1 {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    transform: rotate(10deg);
+    fill: #170C66;
+    top: 15%;
+    right: 10%;
+  }
+  .features-device-mockup .shape-2 {
+    position: absolute;
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #170C66;
+    bottom: 15%;
+    left: 10%;
+  }
+  .features-device-mockup .device-wrapper {
+    max-width: 10rem;
+  }
+  
+  @media (min-width: 576px) {
+    .features-device-mockup .circle {
+      width: 70%;
+      display: block;
+      left: auto;
+    }
+    .features-device-mockup .device-wrapper {
+      max-width: 12.5rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .features-device-mockup .circle {
+      width: 60%;
+      left: auto;
+    }
+    .features-device-mockup .device-wrapper {
+      max-width: 15rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .features-device-mockup .circle {
+      width: 90%;
+      left: -25%;
+    }
+    .features-device-mockup .shape-1 {
+      top: 5%;
+      right: -15%;
+    }
+    .features-device-mockup .shape-2 {
+      bottom: 10%;
+      left: -10%;
+    }
+    .features-device-mockup .device-wrapper {
+      max-width: 15rem;
+      margin-left: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    .features-device-mockup .circle {
+      width: 75%;
+      left: 0;
+    }
+    .features-device-mockup .shape-2 {
+      bottom: 15%;
+      left: 10%;
+    }
+    .features-device-mockup .device-wrapper {
+      max-width: 15rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    .features-device-mockup .circle {
+      width: 80%;
+      left: 0;
+    }
+    .features-device-mockup .device-wrapper {
+      max-width: 17rem;
+    }
+  }
+
+  .font-alt {
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  .text-gradient {
+    background: -webkit-linear-gradient(#170C66, #00ACE4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-primary {
+    background-color: #EBEBEB !important;
   }
