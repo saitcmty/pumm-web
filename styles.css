@@ -473,3 +473,7 @@ section {
   .bg-primary {
     background-color: #EBEBEB !important;
   }
+
+  .navbar-toggler-icon {
+    height: 2rem;
+  }
