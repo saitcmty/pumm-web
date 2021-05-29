@@ -6,156 +6,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUMM | Programando un Mexico Mejor </title>
     <!--favicon, imagen en el title-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
     <!-- Bootstrap core CSS -->
-    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-dark" style="background: rgb(0,172,228);
-      background: linear-gradient(65deg, rgba(0,172,228,1) 0%, rgba(23,12,102,1) 100%);">
-        <div class="container d-flex justify-content-between">
-            <a href="index.html" class="navbar-brand">
-                <!--<img src="./libraries/assets/pumm-logo/saitc.png" alt="PUMM logo" height="40" class="d-inline-block align-middle mr-2">-->
-                <span>PUMM</span>
-                Programando un México Mejor
-            </a>
-            <div>
-                <a href="about.html" class="nav-link d-inline-block" style="color: white;">Acerca del proyecto</a>
-                <a href="equipo.html" class="nav-link d-inline-block" style="color: white;">Equipo</a>
-                <a href="clases.html" class="nav-link d-inline-block" style="color: white;">Clases</a>
-                <a href="recursos.html" class="nav-link d-inline-block" style="color: white;">Recursos</a>
-                <a href="proximamente.html" class="nav-link d-inline-block" style="color: white;">Blog</a>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./libraries/assets/landing/logopumm.png"
+            alt="..."
+            style="height: 1.5rem"
+          />
+          Programando un México Mejor</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca del Proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clases.html">Clases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recursos.html">Recursos</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-    <div id="resource-section" class="album">
-        <div class="container">
-            <h1 class="text-center pb-3">Sigue aprendiendo con los siguientes recursos</h1>
-            <div style="width:100%;">
-             <table>
-  		<tr>
-    		  <th>Cursos</th>
-  		</tr>
-  		<tr>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="https://theme.zdassets.com/theme_assets/1030455/6db765239fe590ca96b7b837b399f03138a5f73f.png" alt="Card image" style="width:100%; height: 100%">
+      </div>
+    </nav>
+    <header class="py-5">
+            <div class="container px-5">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-xxl-6">
+                  <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3 quote">Sigue aprendiendo con los siguientes recursos</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+    <div id="resource-section">
+      <h3>Documentos de apoyo</h3>
+      <div class="card-deck">
+        <div class="card">
+              <img class="card-img-top" src="libraries/assets/resources/ManualDeActividades.png" alt="Card image">
+              <div class="card-body">
+                  <h4 class="card-title">Manual de actividades</h4>
+                        <p class="card-text">Aqui podras encontrar un manual con todas las actividades de las sesiones de programando un mexico mejor</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://docs.google.com/document/d/1ul80gqeWRleui-ra7i01Rl7ZA8VShAfudnUAJ3Q2B30/edit?usp=sharing" class="btn btn-primary">Ir al documento</a>
+              </div>
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="libraries/assets/resources/Cheatsheet.png" alt="Card image">
+              <div class="card-body">
+                  <h4 class="card-title">Cheatsheet</h4>
+                        <p class="card-text">Aqui podras encontrar una cheatsheet que contiene multiples piezas de codigo que te pueden ser utiles al programar y ademas encontraras algunos consejos</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://docs.google.com/document/d/1NKjoixma8OtXt237KwgBvCtm7y6trg-I9Soi0L94Mm0/edit?usp=sharing" class="btn btn-primary">Ir al documento</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <h3>Cursos</h3>
+      <div class="card-deck">
+		    <div class="card">
+    		      <img class="card-img-top" src="https://theme.zdassets.com/theme_assets/1030455/6db765239fe590ca96b7b837b399f03138a5f73f.png" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">Codecademy</h4>
       	                <p class="card-text">Codecademy es un sitio donde puedes tomar cursos interactivos de distintos temas tales como HTML, CSS y Javascript</p>
-      		        <a href="https://www.codecademy.com/" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.codecademy.com/" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="https://www.filepicker.io/api/file/SptBIONJRhiMfOk5ufhH" alt="Card image" style="width:100%; height:100%;">
+		    <div class="card">
+    		      <img class="card-img-top" src="https://res.cloudinary.com/practicaldev/image/fetch/s--lfMhrPQM--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/rphqzfoh2cbz3zj8m8t1.png" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">FreeCodeCamp</h4>
       	                <p class="card-text">FreeCodeCamp es un sitio donde puedes tomar cursos interactivos de distintos temas tales como HTML, CSS y Javascript</p>
-      		        <a href="https://www.freecodecamp.org/" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.freecodecamp.org/" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png" alt="Card image" style="width:100%; height:100%;">
+		    <div class="card text-center">
+    		      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">W3Schools</h4>
       	                <p class="card-text">W3Schools es un sitio donde puedes ver ejemplos de como implementar las etiquetas vistas en clase y otras cosas que te podrán servir para mejorar tu sitio web</p>
-      		        <a href="https://www.w3schools.com/default.asp" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.w3schools.com/default.asp" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-  		</tr>
-  		<tr>
-    		  <th>Herramientas que te pueden servir</th>
-  		</tr>
-  		<tr>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="https://www.w3schools.com/colors/img_colormap.gif" alt="Card image" style="width:40%; height:40%">
+        </div>
+        <h3>Herramientas</h3>
+        <div class="card-deck">
+		    <div class="card">
+    		      <img class="card-img-top" src="https://www.w3schools.com/colors/img_colormap.gif" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">Color picker</h4>
       	                <p class="card-text">Esta herramienta te ayudara a escoger los valores para los colores<br><br></p>
-      		        <a href="https://www.w3schools.com/colors/colors_picker.asp" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.w3schools.com/colors/colors_picker.asp" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Card image" style="width:30%; height:40%">
+		    <div class="card text-center">
+    		      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">Bootstrap</h4>
       	                <p class="card-text">Si quieres hacer tu sitio web más interactivo y que se vea como esta página, te recomendamos darle un vistazo a bootstrap</p>
-      		        <a href="https://www.w3schools.com/bootstrap4/default.asp" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.w3schools.com/bootstrap4/default.asp" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-    		  <td> 
-		    <div class="card text-center" style="width:100%; height:100%">
-    		      <img class="card-img-top" src="http://compute-it.toxicode.fr/2018-10-02--10-30-28/images/title.png" alt="Card image" style="width:100%; height: 40%">
+		    <div class="card text-center">
+    		      <img class="card-img-top" src="http://compute-it.toxicode.fr/2018-10-02--10-30-28/images/title.png" alt="Card image">
     		      <div class="card-body">
       		        <h4 class="card-title">Compute It</h4>
       	                <p class="card-text">¿Tienes problemas con los ciclos y condicionales? Este juego te puede ayudar con eso.</p>
-      		        <a href="http://compute-it.toxicode.fr/" class="btn btn-primary">Ir al sitio</a>
     		      </div>
+              <div class="card-footer">
+                <a href="https://www.w3schools.com/bootstrap4/default.asp" class="btn btn-primary">Ir al sitio</a>
+              </div>
   		    </div>
-		  </td>
-  		</tr>
-	  </table> 
-          </div>
+        </div>
         </div>
     </div>
 
-    <footer class="text-muted">
-        <div class="container">
-            <p class="float-right">
-                <a href="#">Regresa hasta arriba</a>
+    <!-- Footer-->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">Sobre el proyecto</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Contacto</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Términos of Use</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#!">Política de Privacidad</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; SAITC MTY 2021. Todos los derechos reservados.
             </p>
-            <p>SAITC 2021</p>
-            <p>PUMM Programando Un México Mejor</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-4">
+                <a href="https://www.facebook.com/ProgramandoUnMexicoMejor"
+                  ><i class="bi-facebook fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="https://www.instagram.com/programandounmexicomejor/"
+                  ><i class="bi-instagram fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/saitcmty/pumm-web"
+                  ><i class="bi-github fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-
     <!-- Bootstrap core JavaScript
       ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        window.jQuery || document.write('<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>')
+      window.jQuery ||
+        document.write(
+          '<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>'
+        );
     </script>
     <script src="./libraries/assets/js/vendor/popper.min.js"></script>
     <script src="libraries/assets/js/vendor/holder.min.js"></script>
     <script>
-        $(function() {
-            Holder.addTheme("thumb", {
-                background: "#55595c",
-                foreground: "#eceeef",
-                text: "Thumbnail"
-            });
+      $(function () {
+        Holder.addTheme("thumb", {
+          background: "#55595c",
+          foreground: "#eceeef",
+          text: "Thumbnail",
         });
+      });
     </script>
     <script src="./libraries/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./libraries/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 <style>
-    #prox {
-        height: 70vh;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      h2 {
-        color: white;
-        text-align: center;
-      }
+  #prox {
+      height: 70vh;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  h2 {
+      color: white;
+      text-align: center;
+  }
+  header {
+    background-image: url("./libraries/assets/landing/background.png");
+    position: relative;
+    padding: 15rem 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fw-bolder {
+    font-weight: bolder !important;
+  }
+
+  .quote {
+    color: white;
+  }
+  .quote span {
+    color: #ffde59;
+  }
 </style>
 </html>
