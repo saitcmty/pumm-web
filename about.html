@@ -1,93 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUMM | Programando un Mexico Mejor </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUMM | Programando un Mexico Mejor</title>
     <!--favicon, imagen en el title-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
     <!-- Bootstrap core CSS -->
-    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body id="body">
-      <nav class="navbar sticky-top navbar-dark" style="background: rgb(0,172,228);
-      background: linear-gradient(65deg, rgba(0,172,228,1) 0%, rgba(23,12,102,1) 100%);">
-        <div class="container d-flex justify-content-between">
-            <a href="index.html" class="navbar-brand">
-                <!--<img src="./libraries/assets/pumm-logo/saitc.png" alt="PUMM logo" height="40" class="d-inline-block align-middle mr-2">-->
-                <span>PUMM</span>
-                Programando un México Mejor
-            </a>
-            <div>
-              <a href="about.html" class="nav-link d-inline-block" style="color: white;">Acerca del proyecto</a>
-              <a href="equipo.html" class="nav-link d-inline-block" style="color: white;">Equipo</a>
-              <a href="clases.html" class="nav-link d-inline-block" style="color: white;">Clases</a>
-              <a href="recursos.html" class="nav-link d-inline-block" style="color: white;">Recursos</a>
-              <a href="proximamente.html" class="nav-link d-inline-block" style="color: white;">Blog</a>
-            </div>
-          </div>
-      </nav>
-  
-      <div id="prox">
-        <div id="inside">
-          <img src="./libraries/assets/landing/Development.gif" alt="moving computer">
-          <h1>Próximamente</h1><br>
-          <a href="index.html"><button type="button" class="btn btn-primary btn-lg btn-block">Regresar a página principal</button></a>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img src="./libraries/assets/landing/logopumm.png" alt="..." style="height: 1.5rem" />
+          Programando un México Mejor</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca del Proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clases.html">Clases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recursos.html">Recursos</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <footer class="text-muted">
-        <div class="container">
-          <p class="float-right">
-            <a href="#">Regresa hasta arriba</a>
-          </p>
-          <p>SAITC 2021</p>
-          <p>PUMM Programando Un México Mejor</p>
-        </div>
-      </footer>
-  
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>')</script>
-      <script src="./libraries/assets/js/vendor/popper.min.js"></script>
-      <script src="libraries/assets/js/vendor/holder.min.js"></script>
-      <script>
-        $(function () {
-          Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
-        });
-      </script>
-      <script src="./libraries/dist/js/bootstrap.min.js"></script>
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="./libraries/assets/js/ie10-viewport-bug-workaround.js"></script>
-    </body>
-  </html>
+    </nav>
 
-  <style>
-      #prox {
-        height: 70vh;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      #body {
-        height: 100vh !important;
-      }
-      h1 {
-        color: white;
-        text-align: center;
-      }
-      img {
-        height: 30vh;
-      }
-      .btn {
-        text-align: center;
-      }
-      #inside {
-        text-align: center;
-      }  
-  </style>
+    <header class="py-5">
+      <div class="container px-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xxl-6">
+            <div class="text-center my-5">
+              <h1 class="fw-bolder mb-3 quote">
+                "La programación no se trata <span>de lo que sabes,</span> sino de lo que<span> puedes descubirir</span>."
+              </h1>
+              <p class="lead fw-normal text-muted mb-4">
+                Liderado por alumnos del Tecnológico de Monterrey Campus Monterrey, Programando Un México Mejor busca introducir a alumnos de secundaria y preparatoria a la programación por medio de clases de desarrollo web accesible de niveles principiantes y avanzados.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#scroll-target"
+                >Conoce más sobre nuestra historia</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About section one-->
+    <section class="py-5 bg-light" id="scroll-target">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bolder">Inicios</h2>
+            <p class="lead">
+               <strong> Programando un México Mejor</strong> tuvo sus inicios como proyecto de servicio social del grupo estudiantil <i>Mozilla Campus Club Monterrey</i>, sin embargo, a mediados del 2020 debido al cierre del grupo, el proyecto fue solicitado por la <strong> Campus Monterrey,</strong> donde parte de la nueva mesa directiva había participado anteriormente como instructores, con la esperanza de no dejar morir aquello que otros habían comenzado.
+            </p>
+            <p> A pesar de encontrarse en una pandemia, la SAITC decide retomar el proyecto y reinventarlo, adaptandose a las nuevas necesidades de la situación y dándole un completo cambio de imagen.</p>
+            <p>Bajo la supervisión de la Directora de Responsabilidad Social, <a href="https://www.linkedin.com/in/ncgo/" target="_blank">Nadia García,</a> como Socia Formadora y el apoyo de los coordinadores <a href="https://www.linkedin.com/in/julio-gutierrez1235/" target="_blank">Julio Gutiérrez </a>y <a href="https://www.linkedin.com/in/mariafernanda-salas-martinez/" target="_blank">Maríafernanda Salas,</a> se arranca el primer semestre de PUMM con una clase de 4 instructores voluntarios y 6 participantes, con sesiones totalmente en línea cumpliendo cos protocolos sanitarios frente al COVID-19.</p>
+            <p>Durante este primer semestre de reinvención, el proyecto es reconocido a finales del periodo escolar por parte del <i>Consejo de Responsabilidad Social de Campus Monterrey</i> como el <strong>mejor proyecto de servicio social</strong> de todas las Sociedades de Alumnos del campus, un gran logro compartido entre el equipo organizador y la mesa de la SAITC, demostrando que el proyecto se dejó en buenas manos y anticipando el camino brillante que el proyecto tiene por delante. </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="./libraries/assets/landing/logo saitc.png"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section two-->
+    <section class="py-5" id="features">
+      <div class="container px-5 my-5">
+          <div class="row gx-5">
+              <div class="col-lg-2 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Los números de este semestre Febrero-Junio 2021...</h2></div>
+              <div class="col-lg-10">
+                  <div class="row gx-5 row-cols-1 row-cols-md-2">
+                      <div class="col mb-5 h-100">
+                          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-award"></i></div>
+                          <h2 class="h5">24 Miembros de Equipo</h2>
+                          <p class="mb-0">De las carreras de: </p>
+                          <ul>
+                            <li>Ingeniería Tecnologías Computacionales</li>
+                            <li>Ingeniería en Mecatrónica</li>
+                            <li>Ingeniería en Sistemas Digitales y Robótica</li>
+                          </ul>
+                      </div>
+                      <div class="col mb-5 h-100">
+                          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person check"></i></div>
+                          <h2 class="h5">32 Beneficiarios</h2>
+                          <p class="mb-0">De las ciudades de:</p>
+                          <ul>
+                            <li>San Luis Potosí, SLP</li>
+                            <li>Monterrey, N.L.</li>
+                            <li>Apodaca, N.L.</li>
+                            <li>Chihuahua, CHIH</li>
+                            <li>Ciudad Victoria, TAM</li>
+                          </ul>
+                      </div>
+                      <div class="col mb-5 mb-md-0 h-100">
+                          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                          <h2 class="h5">247 Entregables</h2>
+                          <p class="mb-0">De valor y apropiados para la situación actual:</p>
+                          <ul>
+                            <li><strong>12 </strong>Quizzes de repaso</li>
+                            <li><strong>16 </strong>Presentaciones de contenido</li>
+                            <li><strong>20 </strong>Retos de Programacióm</li>
+                            <li><strong>24 </strong>Posts de Redes Sociales</li>
+                            <li><strong>175 </strong>Entradas de Retroalimentación</li>
+                          </ul>
+                      </div>
+                      <div class="col h-100">
+                          <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                          <h2 class="h5">20 sesiones síncronas con beneficiarios</h2>
+                          <p class="mb-0">En Avanzados y principiantes, donde vimos los temas de:</p>
+                          <ul>
+                            <li>HTML y Web Accesible</li>
+                            <li>Fundamentos de Diseño y CSS</li>
+                            <li>Git</li>
+                            <li>JavaScript</li>
+                            <li>y más</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <section class="py-5">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-4 order-first order-lg-last">
+            <img
+              class="img-fluid rounded mb-5 mb-lg-0"
+              src="./libraries/assets/team/girl.gif"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-8">
+            <h2 class="fw-bolder">El Proyecto</h2>
+            <p class="lead">A través de 10 sesiones síncronas de instrucción y apoyo en retos semanales, se busca generar un proyecto final integrador que refleje los temas vistos en clase y se desarrollen habilidades de valor profesional.</p>
+            <p class="lead fw-normal">
+              Actualmente contamos con los talleres de Principiantes y Avanzados y nos encontramos colaborando con las comunidades de <strong>Campana Altamira</strong> en la ciudad de Monterrey, Nuevo León y el proyecto <strong>Sembrando Una Vida Saludable</strong>, inciativa de la <strong>Secretaría de Educación Pública de San Luis Potosí</strong>.
+            </p>
+            <p>El nivel de <strong>Principiantes</strong>, toma en cuenta que, para muchos, este será el primer acercamiento técnico que tendrán con sus computadoras, por lo que nos adentramos al mundo del desarrollo de software y programación utilizando las tecnologías de HTML y CSS, quienes, en conjunto con JavaScript construyen la mayor parte del contenido que accesamos en internet.</p>
+            <p>Siendo estas herramientas visuales, esta introucción a la programación y el desarrollo web culmina en un proyecto final de análisis personal, resultando en la primer página web de nuestros participantes, abriendo camino a mucho más aprendizaje propio y a nuestro siguiente nivel.</p>
+            <p>Por otro lado, el nivel de <strong>Avanzados</strong> empieza explorar tecnologías más robustas y complicadas, como lo es el uso de Git, frameworks como React y una introducción formal a la programación por medio de JavaScript, desarrollando habilidades lógico'matemáticas aplicables en cualquier lenguaje de programación.</p>
+            <p>Además, con nuestra sesión especial de Algoritmia, los participantes druante el semestre aprenden a resolver problemas por su cuenta, aprendiendo lecciones que les servirán de por vida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team members section-->
+    <section class="py-5 bg-light">
+      <div class="container px-5 my-5">
+        <div class="text-center">
+          <h2 class="fw-bolder">Equipo organizador Semestre Febrero-Junio 2021</h2>
+          <p class="lead fw-normal  mb-5">
+            Un gusto trabajar por y para ustedes
+          </p>
+        </div>
+        <div
+          class="
+            row
+            gx-5
+            row-cols-1 row-cols-sm-2 row-cols-xl-4
+            justify-content-center
+          "
+        >
+          <div class="col mb-5 mb-5 mb-xl-0">
+            <div class="text-center">
+              <img
+                class="img-fluid rounded-circle mb-4 px-4"
+                src="./libraries/assets/team/4.png"
+                alt="Nadia García"
+              />
+              <h5 class="fw-bolder">Nadia García</h5>
+              <div class="fst-italic ">Socia Formadora &amp; Directora de Responsabilidad Social SAITC</div>
+              <a href="https://www.linkedin.com/in/ncgo/"
+                  ><i class="bi-linkedin fs-3"></i
+                > Contacto</a>
+            </div>
+          </div>
+          <div class="col mb-5 mb-5 mb-xl-0">
+            <div class="text-center">
+              <img
+                class="img-fluid rounded-circle mb-4 px-4"
+                src="./libraries/assets/team/5.png"
+                alt="Julio Gutiérrez"
+              />
+              <h5 class="fw-bolder">Julio Gutiérrez</h5>
+              <div class="fst-italic ">Coordinador General Avanzados</div>
+              <a href="https://www.linkedin.com/in/julio-gutierrez1235/"
+                  ><i class="bi-linkedin fs-3"></i
+                > Contacto</a>
+            </div>
+          </div>
+          <div class="col mb-5 mb-5 mb-sm-0">
+            <div class="text-center">
+              <img
+                class="img-fluid rounded-circle mb-4 px-4"
+                src="./libraries/assets/team/3.png"
+                alt="Marifer Salas"
+              />
+              <h5 class="fw-bolder">Maríafernanda Salas</h5>
+              <div class="fst-italic ">Coordinadora General Principiantes</div>
+              <a href="https://www.linkedin.com/in/mariafernanda-salas-martinez/"
+                  ><i class="bi-linkedin fs-3"></i
+                > Contacto</a>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="text-center">
+              <img
+                class="img-fluid rounded-circle mb-4 px-4"
+                src="./libraries/assets/team/7.png"
+                alt="Ana Zermeño"
+              />
+              <h5 class="fw-bolder">Ana Zermeño</h5>
+              <div class="fst-italic ">Coordinadora Jr Principiantes</div>
+              <a href="https://www.linkedin.com/in/ana-zermeno/"
+                  ><i class="bi-linkedin fs-3"></i
+                > Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="call-to-action text-white text-center" id="signup">
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-xl-6">
+          <h2 class="mb-4">
+            ¿Quieres formar parte del proyecto? Contáctanos por mail.
+          </h2>
+          <!-- Signup form-->
+          <form>
+            <div class="input-group input-group-lg">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Ingresa tu email..."
+                aria-label="Ingresa tu email..."
+                aria-describedby="button-submit"
+              />
+              <button
+                class="btn btn-primary"
+                id="button-submit"
+                type="button"
+              >
+                ¡Suscríbete!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">Sobre el proyecto</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Contacto</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Términos of Use</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#!">Política de Privacidad</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; SAITC MTY 2021. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-4">
+                <a href="https://www.facebook.com/ProgramandoUnMexicoMejor"
+                  ><i class="bi-facebook fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="https://www.instagram.com/programandounmexicomejor/"
+                  ><i class="bi-instagram fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/saitcmty/pumm-web"
+                  ><i class="bi-github fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>'
+        );
+    </script>
+    <script src="./libraries/assets/js/vendor/popper.min.js"></script>
+    <script src="libraries/assets/js/vendor/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", {
+          background: "#55595c",
+          foreground: "#eceeef",
+          text: "Thumbnail",
+        });
+      });
+    </script>
+    <script src="./libraries/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./libraries/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+<style>
+  header {
+    background-image: url("./libraries/assets/landing/background.png");
+    position: relative;
+    padding: 15rem 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fw-bolder {
+    font-weight: bolder !important;
+  }
+
+  .quote {
+    color: white;
+  }
+  .quote span {
+    color: #FFDE59;
+  }
+  
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+</style>

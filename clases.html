@@ -1,119 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUMM | Programando un Mexico Mejor </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUMM | Programando un Mexico Mejor</title>
     <!--favicon, imagen en el title-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
     <!-- Bootstrap core CSS -->
-    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libraries/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="./styles.css" rel="stylesheet">
-</head>
-<body>
-      <nav class="navbar sticky-top navbar-dark" style="background: rgb(0,172,228);
-      background: linear-gradient(65deg, rgba(0,172,228,1) 0%, rgba(23,12,102,1) 100%);">
-        <div class="container d-flex justify-content-between">
-            <a href="./index.html" class="navbar-brand">
-                <!--<img src="./libraries/assets/pumm-logo/saitc.png" alt="PUMM logo" height="40" class="d-inline-block align-middle mr-2">-->
-                <span>PUMM</span>
-                Programando un México Mejor
-            </a>
-            <div>
-              <a href="./about.html" class="nav-link d-inline-block" style="color: white;">Acerca del proyecto</a>
-              <a href="./equipo.html" class="nav-link d-inline-block" style="color: white;">Equipo</a>
-              <a href="./clases.html" class="nav-link d-inline-block" style="color: white;">Clases</a>
-              <a href="./recursos.html" class="nav-link d-inline-block" style="color: white;">Recursos</a>
-              <a href="./proximamente.html" class="nav-link d-inline-block" style="color: white;">Blog</a>
-            </div>
-        </div>
-      </nav>
-  
-      <div id="resource-section" class="album">
-        <div class="container">
-          <h3>Clases Septiembre-Diciembre 2021</h3>
-          <div class="row">
-            <div class="card text-center">
-              <h5 for="" class="card-header">Introducción a HTML y Etiquetas Básicas (pt. 1)</h5>
-              <div class="card-body">
-                <a href="./ad-20/semana01.html"><img class="card-img" src="./libraries/assets/landing/10.png" alt="Clase 1"></a>
-                <label class="card-text">Tutores: <strong>David Acevedo y Juan Pablo Díaz</strong></label>
-                <p class="card-text"> <a href="https://drive.google.com/file/d/1c-wiyo8nTxRTEWGxl4L43YU5wLfPAeQB/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-              </div>
-            </div>
-            <div class="card text-center">
-                <h5 class="card-header">Etiquetas Básicas (pt.2) y Accesibilidad en la Web</h5>
-                <div class="card-body">
-                  <a href="./ad-20/semana02.html"><img class="card-img" src="./libraries/assets/landing/11.png" alt="Clase 2"></a>
-                  <label class="card-text">Tutores: <strong>Andres Sánchez y Juan Carlos Garza</strong></label>
-                  <p class="card-text"><a href="https://drive.google.com/file/d/1QSJ64rJpnpWi3_cLNLKhjjN_HB3HlxFA/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-                </div>
-              </div>
-              <div class="card text-center">
-                <h5 class="card-header">Introducción a CSS (pt. 1)</h5>
-                <div class="card-body">
-                  <a href="./ad-20/semana03.html"><img class="card-img" src="./libraries/assets/landing/12.png" alt="Clase 3"></a>
-                  <label class="card-text">Tutores: <strong>David Acevedo y Juan Pablo Díaz</strong></label>
-                  <p class="card-text"><a href="https://drive.google.com/file/d/1ySbmwP2AxdrIv95GQia77B9MwOck_SX5/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-                </div>
-              </div>
-  
-              <div class="card text-center">
-                <h5 for="" class="card-header">Introducción a CSS (pt.2) y Diseño Web</h5>
-                <div class="card-body">
-                  <a href="./ad-20/semana04.html"><img class="card-img" src="./libraries/assets/landing/13.png" alt="Clase 4"></a>
-                  <label class="card-text">Tutores: <strong>Andres Sánchez y Juan Carlos Garza</strong></label>
-                  <p class="card-text"><a href="https://drive.google.com/file/d/1Ynf7Lop9Yvisbqf4vEhsIEwfuUU-wW3A/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-                </div>
-              </div>
-            <div class="card text-center">
-                <h5 for="" class="card-header">Introducción a JavaScript (pt.1)</h5>
-                <div class="card-body">
-                  <a href="./ad-20/semana05.html"><img class="card-img" src="./libraries/assets/landing/15.png" alt="Clase 5"></a>
-                  <label class="card-text">Tutores: <strong>David Acevedo y Juan Pablo Díaz</strong></label>
-                  <p class="card-text"><a href="https://drive.google.com/file/d/1ZVCtg0HLKdz4O7HZ0odXG7-fdf9kxpsN/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-                </div>
-              </div>
-            <div class="card text-center">
-            <h5 for="" class="card-header">Introducción a JavaScript (pt.2)</h5>
-            <div class="card-body">
-                <a href="./ad-20/semana06.html"><img class="card-img" src="./libraries/assets/landing/15.png" alt="Clase 6"></a>
-                <label class="card-text">Tutores: <strong>Andres Sánchez y Juan Carlos Garza</strong></label>
-                <p class="card-text"><a href="https://drive.google.com/file/d/1-t3rTDEUoXfEzEsUo9b0OD5ZkAFOAp6P/view?usp=sharing"><strong>Link a la grabación</strong></a></p>
-            </div>
-            </div>
-
-          </div>
-  
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./libraries/assets/landing/logopumm.png"
+            alt="..."
+            style="height: 1.5rem"
+          />
+          Programando un México Mejor</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca del Proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clases.html">Clases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recursos.html">Recursos</a>
+            </li>
+          </ul>
         </div>
       </div>
-  
-      <footer class="text-muted">
-        <div class="container">
-          <p class="float-right">
-            <a href="#">Regresa hasta arriba</a>
-          </p>
-          <p>SAITC 2021</p>
-          <p>PUMM Programando Un México Mejor</p>
+    </nav>
+
+    <header class="py-5">
+      <div class="container px-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xxl-6">
+            <div class="text-center my-5">
+              <h1 class="fw-bolder mb-3 quote">Clases</h1>
+              <p class="lead fw-normal text-muted mb-4">
+                Encuentra todos los recursos de tus clases del semestre Febrero-Junio 2021 aquí.
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
-  
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>')</script>
-      <script src="./libraries/assets/js/vendor/popper.min.js"></script>
-      <script src="./libraries/assets/js/vendor/holder.min.js"></script>
-      <script>
-        $(function () {
-          Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      </div>
+    </header>
+    <div class="accordion d-block" id="accordionNiveles">
+      <div class="card" class="collapseIndex">
+        <div class="card-header" id="Principiantes">
+          <button
+            id="principiantesCollapseButton"
+            class="btn btn-link btn-block text-left collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsePrincipiantes"
+            aria-expanded="false"
+            aria-controls="collapsePrincipiantes"
+          >
+            <h2 class="mb-0">Principiantes</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3rem"
+              height="2rem"
+              fill="currentColor"
+              class="bi bi-caret-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="collapsePrincipiantes"
+          class="collapse"
+          aria-labelledby="Principiantes"
+          data-parent="#accordionNiveles"
+        >
+          <div class="card-body">
+            <div class="card-deck">
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion1.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p1.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    1. ¿Qué es el desarrollo web?
+                  </h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion1.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 1
+                      </button></a
+                    >
+                    <a href="./fj-21/principiantes/sesion2.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 2
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 1.</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion2.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p2.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">2. HTML</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion2.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 2
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 2</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion3.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p3.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    3. Accesibilidad en la Web
+                  </h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion3.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 3
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 3</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion4.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p4.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">4. CSS</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion4.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 4
+                      </button></a
+                    >
+                    <a href="./fj-21/principiantes/sesion5.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 5
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted">Módulo 4</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion6.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p5.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">5. Diseño Web</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion6.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 6
+                      </button></a
+                    >
+                    <a href="./fj-21/principiantes/sesion7.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 7
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 5</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/principiantes/sesion8.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21p6.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    6. Introducción a JavaScript
+                  </h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/principiantes/sesion8.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 8
+                      </button></a
+                    >
+                    <a href="./fj-21/principiantes/sesion9.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 9
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 6</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="Avanzados">
+          <button
+            id="avanzadosCollapseButton"
+            class="btn btn-link btn-block text-left collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseAvanzados"
+            aria-expanded="false"
+            aria-controls="collapseAvanzados"
+          >
+            <h2 class="mb-0">Avanzados</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3rem"
+              height="2rem"
+              fill="currentColor"
+              class="bi bi-caret-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          id="collapseAvanzados"
+          class="collapse"
+          aria-labelledby="Avanzados"
+          data-parent="#accordionNiveles"
+        >
+          <div class="card-body">
+            <div class="card-deck">
+              <div class="card">
+                <a href="./fj-21/avanzados/sesion1.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21a1.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    1. Introducción a la programación y el desarrollo web
+                  </h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/avanzados/sesion1.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 1
+                      </button></a
+                    >
+                    <a href="./fj-21/avanzados/sesion2.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 2
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 1.</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/avanzados/sesion2.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21a2.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">2. Web Development 101</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/avanzados/sesion2.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 2
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 2</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/avanzados/sesion3.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21a3.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    3. Empecemos a programar
+                  </h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/avanzados/sesion3.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 3
+                      </button></a
+                    >
+                    <a href="./fj-21/avanzados/sesion4.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 4
+                      </button></a
+                    >
+                    <a href="./fj-21/avanzados/sesion5.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 5
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 3</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card">
+                <a href="./fj-21/avanzados/sesion6.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21a4.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">4. Algoritmia</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/avanzados/sesion6.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 6
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted">Módulo 4</small>
+                </div>
+              </div>
+              <div class="card">
+                <a href="./fj-21/avanzados/sesion7.html"
+                  ><img
+                    src="./libraries/assets/clases/FJ21a5.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title text-center">5. Diseño Web</h5>
+                </div>
+                <div class="card-footer text-center">
+                  <p class="card-text">
+                    <a href="./fj-21/avanzados/sesion7.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 7
+                      </button></a
+                    >
+                    <a href="./fj-21/avanzados/sesion8.html"
+                      ><button type="button" class="btn btn-outline-primary">
+                        Sesión 8
+                      </button></a
+                    >
+                  </p>
+                  <small class="text-muted text-center">Módulo 5</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <section class="py-5" style="margin-top: 5rem;">
+      <div class="container px-5 my-5">
+          <div class="text-center mb-5">
+              <h1 class="fw-bolder">Semestres Anteriores</h1>
+              <p class="lead fw-normal text-muted mb-0">Materiales no actualizados</p>
+          </div>
+          <div class="row gx-5">
+              <div class="col-lg-6">
+                  <div class="position-relative mb-5">
+                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="clasesad20.html">
+                      <img class="img-fluid rounded-3 mb-3" src="./libraries/assets/clases/ad20.png" alt="Clases Agosto-Diciembre 2020" />
+                      Clases Agosto Diciembre 2020</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="py-5 bg-light">
+      <div class="container px-5 my-5">
+          <h2 class="display-4 fw-bolder mb-4">¿Qué te gustaría aprender después?</h2>
+          <a class="btn btn-lg btn-primary" href="#!">¡Contáctanos para ver qué podemos hacer!</a>
+      </div>
+  </section>
+
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="about.html">Sobre el proyecto</a>
+              </li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Contacto</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Términos of Use</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item">
+                <a href="#!">Política de Privacidad</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; SAITC MTY 2021. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-4">
+                <a href="https://www.facebook.com/ProgramandoUnMexicoMejor"
+                  ><i class="bi-facebook fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="https://www.instagram.com/programandounmexicomejor/"
+                  ><i class="bi-instagram fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/saitcmty/pumm-web"
+                  ><i class="bi-github fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="./libraries/assets/js/vendor/jquery.min.js"><\/script>'
+        );
+    </script>
+    <script src="./libraries/assets/js/vendor/popper.min.js"></script>
+    <script src="libraries/assets/js/vendor/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", {
+          background: "#55595c",
+          foreground: "#eceeef",
+          text: "Thumbnail",
         });
-      </script>
-      <script src="./libraries/dist/js/bootstrap.min.js"></script>
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="./libraries/assets/js/ie10-viewport-bug-workaround.js"></script>
-    </body>
-  </html>
+      });
+    </script>
+    <script src="./libraries/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./libraries/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+<style>
+  header {
+    background-image: url("./libraries/assets/landing/background.png");
+    position: relative;
+    padding: 15rem 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fw-bolder {
+    font-weight: bolder !important;
+  }
+
+  .quote {
+    color: white;
+  }
+  .quote span {
+    color: #ffde59;
+  }
+</style>
