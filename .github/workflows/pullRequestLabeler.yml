@@ -20,21 +20,21 @@ jobs:
       if: |
         contains(github.event.pull_request.labels.*.name, 'videojuegos')
       run: |
-        curl -s -X POST "${{ secrets.DISCORD_VIDEOJUEGOS }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.user.login}}, checalo en: ${{github.event.pull_request.url}}"
+        curl -s -X POST "${{ secrets.DISCORD_VIDEOJUEGOS }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.user.login}}, checalo en: ${{github.event.pull_request.html_url}}"
     
     - name: Check if pull request has label "principiantes-web"
       if: |
         contains(github.event.pull_request.labels.*.name, 'principiantes-web')
         
       run: |
-        curl -s -X POST "${{ secrets.DISCORD_PRINCIPIANTES_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+        curl -s -X POST "${{ secrets.DISCORD_PRINCIPIANTES_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.user.login}}, checalo en: ${{github.event.pull_request.html_url}}"
       
     - name: Check if pull request has label "avanzados-web"
       if: |
         contains(github.event.pull_request.labels.*.name, 'avanzados-web')
         
       run: |
-        curl -s -X POST "${{ secrets.DISCORD_AVANZADOS_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+        curl -s -X POST "${{ secrets.DISCORD_AVANZADOS_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.user.login}}, checalo en: ${{github.event.pull_request.html_url}}"
       
     
  
