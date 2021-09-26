@@ -11,6 +11,11 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
+  notify:
+    needs: triage
+    runs-on: ubuntu-latest
+    name: send discord message
+    steps:
     - name: Check if pull request has label "videojuegos"
       if: |
         contains(github.event.pull_request.labels.*.name, 'videojuegos')
