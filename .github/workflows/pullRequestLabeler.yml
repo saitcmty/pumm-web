@@ -1,0 +1,14 @@
+name: "Pull Request Labeler"
+on:
+- pull_request_target
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/labeler@v3
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+    - name: "Send message to discord server"
+      run: |
+       curl -s -X POST "${{ secrets.DISCORD_PULL_REQUEST }}" -d "content=¡Hay un nuevo pull requests!"
