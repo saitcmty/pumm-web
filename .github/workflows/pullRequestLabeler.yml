@@ -5,10 +5,31 @@ on:
 jobs:
   triage:
     runs-on: ubuntu-latest
+    name: Label the pull request
     steps:
     - uses: actions/labeler@v3
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: "Send message to discord server"
+
+    - name: Check if pull request has label "videojuegos"
+      if: |
+        contains(github.event.pull_request.labels.*.name, 'videojuegos')
       run: |
-       curl -s -X POST "${{ secrets.DISCORD_PULL_REQUEST }}" -d "content=¡Hay un nuevo pull requests!"
+        curl -s -X POST "${{ secrets.DISCORD_VIDEOJUEGOS }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+    
+    - name: Check if pull request has label "principiantes-web"
+      if: |
+        contains(github.event.pull_request.labels.*.name, 'principiantes-web')
+        
+      run: |
+        curl -s -X POST "${{ secrets.DISCORD_PRINCIPIANTES_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+      
+    - name: Check if pull request has label "avanzados-web"
+      if: |
+        contains(github.event.pull_request.labels.*.name, 'avanzados-web')
+        
+      run: |
+        curl -s -X POST "${{ secrets.DISCORD_AVANZADOS_WEB }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+      
+    
+ 
