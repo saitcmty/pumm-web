@@ -20,7 +20,7 @@ jobs:
       if: |
         contains(github.event.pull_request.labels.*.name, 'videojuegos')
       run: |
-        curl -s -X POST "${{ secrets.DISCORD_VIDEOJUEGOS }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.owner}}, checalo en: ${{github.event.pull_request.url}}"
+        curl -s -X POST "${{ secrets.DISCORD_VIDEOJUEGOS }}" -d "content=Hay un nuevo pull request: ${{github.event.pull_request.title}} creado por ${{github.event.pull_request.user.login}}, checalo en: ${{github.event.pull_request.url}}"
     
     - name: Check if pull request has label "principiantes-web"
       if: |
