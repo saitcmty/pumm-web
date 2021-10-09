@@ -1,0 +1,8 @@
+videojuegos:
+- 'ad-21/videojuegos/*'
+
+principiantes-web:
+- 'ad-21/principiantes-web/*'
+
+avanzados-web:
+- 'ad-21/avanzados-web/*'
